@@ -30,6 +30,12 @@ int main()
 	}
 	else
 	{
-		cout << "Longjmp flow" << endl
+		cout << "Longjmp flow" << endl;
 	}
+}
+
+static void func1()
+{
+	Test mytest;
+	longjmp(g_stack_env,1);
 }
